@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Starter Template · Bootstrap</title>
+
+  <link href="css/mystyle.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <nav class="navbar ">
+    <img class="logo" src="static/gr.png" height="60px" width="60px">
+    <form class="search">
+      <input class="form-search" type="text" placeholder="ISBN, Author, Title">
+      <i class="fa fa-search"></i>
+    </form>
+
+  </nav>
+  <div class="head">
+    <h1>HOME</h1>
+  </div>
+  <div class="container">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Fugiat quibusdam dignissimos dolorem soluta quasi ut
+      corporis ipsum. Ab molestias laboriosam et odit,
+      quas aut distinctio cupiditate dolor ducimus est repellendus.</p>
+  </div>
+
+  <div class="container-fluid">
+    <div class="slider">
+      <img class="mySlides" src="static/imgs/16bk.jpeg" height="700px" width="1000px">
+      <img class="mySlides" src="static/imgs/17bk.jpeg" height="700px" width="1000px">
+      <img class="mySlides" src="static/imgs/18bk.jpeg" height="700px" width="1000px">
+      <img class="mySlides" src="static/imgs/13bk.jpeg" height="700px" width="1000px">
+    </div>
+      <button class="display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="display-right" onclick="plusDivs(+1)">&#10095;</button>
+  </div>
+
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = x.length };
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex - 1].style.display = "block";
+    }
+  </script>
+</body>
+
+</html>
