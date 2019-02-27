@@ -5,48 +5,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Material Design Bootstrap</title>
+  {% if title %}
+        <title>The Great Read.com - {{ title }}</title>
+    {% else %}
+        <title>The Great Read.com</title>
+    {% endif %}
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
   <!-- Bootstrap core CSS -->
   <link href="../static/css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
   <link href="../static/css/mdb.min.css" rel="stylesheet">
-  <link href="../static/css/mdb.lite.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
-  <link href="../static/style.css" rel="stylesheet">
   <link href="../static/css/style.min.css" rel="stylesheet">
   <style type="text/css">
-    html,
-    body,
-    header,
-    .carousel {
-      height: 60vh;
-    }
-
-    @media (max-width: 740px) {
-
-      html,
-      body,
-      header,
-      .carousel {
-        height: 100vh;
-      }
-    }
-
-    @media (min-width: 800px) and (max-width: 850px) {
-
-      html,
-      body,
-      header,
-      .carousel {
-        height: 100vh;
-      }
-    }
-
     @media (min-width: 800px) and (max-width: 850px) {
       .navbar:not(.top-nav-collapse) {
-        background: #929FBA !important;
+        background: #1C2331 !important;
       }
     }
 
@@ -55,102 +30,98 @@
 
 <body>
 
-  <header>
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container">
 
-    <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-      <div class="container">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#" target="_blank">
+        <img src="../static/img/gr.png" class="img-fluid z-depth-1-half" alt="logo" width="70" height="70">
+      </a>
 
-        <!-- Brand -->
-        <a class="navbar-brand" href="https://mdbootstrap.com/docs/jquery/" target="_blank">
-          <img src="../static/img/gr.png" width="50px" height="50px">
-        </a>
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <!-- Collapse -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-        <!-- Links -->
-        
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            
-
+        <!-- Left -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+             
+            </a>
+          </li>
           
-          <!-- Right -->
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">
-                <span class="sr-only"></span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://mdbootstrap.com/docs/jquery/" target="_blank"> </a>
-            </li>
-            <li class="nav-item">
-              <a style="font-weight:bold; font-size: 30px;" class="nav-link" href="{{ url_for('login') }}">Log in</a>
-            <li class="nav-item">
-              <a  style=" font-weight:bold; text-align: right; font-size: 30px;" class="nav-link" href="{{ url_for('register') }}">Sign Up</a>
-            </li>
-          </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="#" target="_blank"></a>
+          </li>
+        </ul>
 
+        <!-- Right -->
+        <ul class="navbar-nav nav-flex-icons">
           
-          
-
-        </div>
+          </li>
+          <li class="nav-item">
+            <a href="https://twitter.com/MDBootstrap" class="nav-link" target="_blank">
+              <h4>Log In</h4>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://github.com/mdbootstrap/bootstrap-material-design" class="nav-link border border-light rounded"
+              target="_blank">
+              <h4>Sign Up</h4>
+            </a>
+          </li>
+        </ul>
 
       </div>
-    </nav>
-    <!-- Navbar -->
-     {% block content%}{%endblock content%}
-    
-  <!--Footer-->
-  <footer class="page-footer text-center font-small mt-4 wow fadeIn fixed-bottom">
-
-    <!--Call to action-->
-    <div class="pt-4">
-      <h3>Contact Us</h3>
-      Location: Design Hub, Kampala<br>
-      Tel: 0421977566/ 0759551329 <br>
-      Email: great-reads@gmail.com <br>
 
     </div>
-    <!--/.Call to action-->
+  </nav>
+  <!-- Navbar -->
+    {% block content %}{% endblock %}
+  
 
+  <!--Footer-->
+  <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+
+    <!--Call to action-->
+    
     <hr class="my-4">
- 
+
     <!-- Social icons -->
     <div class="pb-4">
-      <a href="https://www.facebook.com/mdbootstrap" target="_blank">
+      <a href="#" target="_blank">
         <i class="fab fa-facebook-f mr-3"></i>
       </a>
 
-      <a href="https://twitter.com/MDBootstrap" target="_blank">
+      <a href="#" target="_blank">
         <i class="fab fa-twitter mr-3"></i>
       </a>
 
-      <a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4" target="_blank">
+      <a href="#" target="_blank">
         <i class="fab fa-youtube mr-3"></i>
       </a>
 
-      <a href="https://plus.google.com/u/0/b/107863090883699620484" target="_blank">
+      <a href="#" target="_blank">
         <i class="fab fa-google-plus-g mr-3"></i>
       </a>
 
-      <a href="https://dribbble.com/mdbootstrap" target="_blank">
+      <a href="#" target="_blank">
         <i class="fab fa-dribbble mr-3"></i>
       </a>
 
-      <a href="https://pinterest.com/mdbootstrap" target="_blank">
+      <a href="#" target="_blank">
         <i class="fab fa-pinterest mr-3"></i>
       </a>
 
-      <a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
-        <i class="fab fa-github mr-3"></i>
-      </a>
+      
 
-      <a href="http://codepen.io/mdbootstrap/" target="_blank">
+      <a href="#" target="_blank">
         <i class="fab fa-codepen mr-3"></i>
       </a>
     </div>
@@ -159,7 +130,7 @@
     <!--Copyright-->
     <div class="footer-copyright py-3">
       © 2019 Copyright:
-      <a href="https://mdbootstrap.com/education/bootstrap/" target="_blank"> GreatReads.com </a>
+      <a href="#" target="_blank"> The Great Read.com </a>
     </div>
     <!--/.Copyright-->
 
@@ -184,3 +155,4 @@
 </body>
 
 </html>
+

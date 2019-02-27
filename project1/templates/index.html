@@ -1,120 +1,197 @@
-{% extends "base.html" %}
-{% block content %}
+<!DOCTYPE html>
+<html lang="en">
 
-    <!--Carousel Wrapper-->
-    <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>The Great Read.com</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="../static/css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="../static/css/style.min.css" rel="stylesheet">
+  <style type="text/css">
+    @media (min-width: 800px) and (max-width: 850px) {
+      .navbar:not(.top-nav-collapse) {
+        background: brown!important;
+      }
+    }
 
-      <!--Indicators-->
-      <ol class="carousel-indicators">
-        <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-1z" data-slide-to="1"></li>
-        <li data-target="#carousel-example-1z" data-slide-to="2"></li>
-      </ol>
-      <!--/.Indicators-->
+  </style>
+</head>
 
-      <!--Slides-->
-      <div class="carousel-inner" role="listbox">
+<body>
 
-        <!--First slide-->
-        <div class="carousel-item active">
-          <div class="view" style="background-image: url('img/kumar.jpg'); background-repeat: no-repeat; background-size: cover;">
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container">
 
-            <!-- Mask & flexbox options-->
-            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#" target="_blank">
+        <img src="../static/img/gr.png" class="img-fluid z-depth-1-half" alt="logo" width="70" height="70">
+      </a>
 
-              <!-- Content -->
-              <div class="text-center white-text mx-5 wow fadeIn">
-                <h1 class="mb-4">
-                  <strong style="color:white; font-weight:bolder; font-family:bell mt;
-                  font-size:60px;"><h1>Love Reading?</strong>
-                
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-                
-              </div>
-              <!-- Content -->
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-            </div>
-            <!-- Mask & flexbox options-->
+        <!-- Left -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+             
+            </a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#" target="_blank"></a>
+          </li>
+        </ul>
 
-          </div>
-        </div>
-        <!--/First slide-->
-
-        <!--Second slide-->
-        <div class="carousel-item">
-          <div class="view" style="background-image: url('img/jason.jpg'); background-repeat: no-repeat; background-size: cover;">
-
-            <!-- Mask & flexbox options-->
-            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-
-              <!-- Content -->
-              <div class="text-center white-text mx-5 wow fadeIn">
-                <h1 class="mb-4">
-                  <strong style="color:white; font-weight:bolder; font-family:bell mt;
-                  font-size:60px;">Join the World's Biggest Book Review Website. </strong>
-                </h1>
-
-                
-              </div>
-              <!-- Content -->
-
-            </div>
-            <!-- Mask & flexbox options-->
-
-          </div>
-        </div>
-        <!--/Second slide-->
-
-        <!--Third slide-->
-        <div class="carousel-item">
-          <div class="view" style="background-image: url('img/pras.jpg'); background-repeat: no-repeat; background-size: cover;">
-
-            <!-- Mask & flexbox options-->
-            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-
-              <!-- Content -->
-              <div class="text-center blue-text mx-5">
-                <h1 class="mb-4">
-                  <strong style="color:white; font-weight:bolder; font-family:bell mt;
-                  font-size:60px;">Great Reads.com <br> "For the Great Minds"</strong>
-                </h1>
-
-                
-              </div>
-              <!-- Content -->
-
-            </div>
-            <!-- Mask & flexbox options-->
-
-          </div>
-        </div>
-        <!--/Third slide-->
+        <!-- Right -->
+        <ul class="navbar-nav nav-flex-icons">
+          
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" target="_blank">
+              <h4>Log In</h4>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="register.html" class="nav-link border border-light rounded">
+              <h4>Sign Up</h4>
+            </a>
+          </li>
+        </ul>
 
       </div>
-      <!--/.Slides-->
-
-      <!--Controls-->
-      <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-      <!--/.Controls-->
 
     </div>
-    <!--/.Carousel Wrapper-->
+  </nav>
+  <!-- Navbar -->
 
-  </header>
+  <!--Carousel Wrapper-->
+  <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+
+      <!--First slide-->
+      <div class="carousel-item active">
+        <div class="view" style="background-image: url('../static/img/pras.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text">
+              <h1 class="mb-4" style="font-size:50px; font-weight:bold; font-family:bell mt;">
+                Love Reading?
+              </h1>
+
+              
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/First slide-->
+
+      <!--Second slide-->
+      <div class="carousel-item">
+        <div class="view" style="background-image: url('../static/img/jason.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text">
+              <h1 class="mb-4" style="font-size:50px; font-weight:bold; font-family:bell mt;">
+                Join the World's Biggest Book Review Website
+              </h1>
+
+              
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/Second slide-->
+
+      <!--Third slide-->
+      <div class="carousel-item">
+        <div class="view" style="background-image: url('../static/img/bog.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text">
+              <h1 class="mb-4" style="font-size:50px; font-weight:bold; font-family:bell mt;">
+                The Great Read
+              </h1>
+
+              <h2 style="font-size:30px; font-weight:bold; font-family:bell mt;">
+                "For the Great Minds"
+              </h2>
+
+              
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/Third slide-->
+
+    </div>
+    <!--/.Slides-->
+
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+
+  </div>
+  <!--/.Carousel Wrapper-->
 
   <!--Main layout-->
   <main>
     <div class="container">
 
       <!--Section: Main info-->
-      <section class="mt-5">
+      <section class="mt-5 wow fadeIn">
 
         <!--Grid row-->
         <div class="row">
@@ -122,7 +199,7 @@
           <!--Grid column-->
           <div class="col-md-6 mb-4">
 
-            <img src="img/opo.jpg" class="img-fluid z-depth-1-half"
+            <img src="../static/img/opo.jpg" class="img-fluid z-depth-1-half"
               alt="">
 
           </div>
@@ -132,12 +209,19 @@
           <div class="col-md-6 mb-4">
 
             <!-- Main heading -->
-            <h1>Blog and write <br>
+            <h1 style="font-family:bell mt; color: green;font-size:70px;">Blog and <br>write 
               reviews</h1>
-            <!-- CTA -->
-            <p>You're the same today as you'll be in five years except for the people you meet and the books you read.
-                Charlie "Tremendous" Jones
-                </p>
+            <p>You're the same today as you'll be in five years except for the people you meet and the books you read. Charlie "Tremendous" Jones
+
+            </p>
+            
+            <!-- Main heading -->
+
+          
+
+            
+
+            
 
           </div>
           <!--Grid column-->
@@ -145,113 +229,90 @@
         </div>
         <!--Grid row-->
 
-      </section>
-      <!--Section: Main info-->
-      <section class="mt-5">
-
-          <!--Grid row-->
-          <div class="row">
-  
-            <!--Grid column-->
-            <div class="col-md-6 mb-4">
-                <h1>Share all your reading experiences</h1>
-                <!-- CTA -->
-                <p>Writing is a kind of double living. Writer experiences everything twice
-                    Catherine Drinker Bowen</p>
-              
-  
-            </div>
-            <!--Grid column-->
-  
-            <!--Grid column-->
-            <div class="col-md-6 mb-4">
-  
-              <!-- Main heading -->
-              <img src="img/lacie.jpg" class="img-fluid z-depth-1-half"
-                alt="">
-                
-              
-                  
-                  
-  
-            </div>
-            
-          <!--Section: Main info-->
-      <section class="mt-5">
-
-          <!--Grid row-->
-          <div class="row">
-  
-            <!--Grid column-->
-            <div class="col-md-6 mb-4">
-  
-              <img src="img/suad.jpg" class="img-fluid z-depth-1-half"
-                alt="">
-  
-            </div>
-            <!--Grid column-->
-  
-            <!--Grid column-->
-            <div class="col-md-6 mb-4">
-  
-              <!-- Main heading -->
-              <h1>Discover other <br>book lovers</h1>
-              <!-- CTA -->
-              <p>Writing became such a process of discovery
-                  Sharon O'Brien
-                  </p>
-  
-            </div>
-            <!--Grid column-->
-  
-          </div>
-          <!--Grid row-->
-  
-        </section>  
-
-          </div>
-          
-        <h2 class="my-5 h3 text-center">...and even more</h2>
-
-        <!--First row-->
-        <div class="row features-small mt-5 wow fadeIn">
-
-          
-        </div>
-        <!--/First row-->
-
-        <!--Second row-->
-        <div class="row features-small mt-4 wow fadeIn">
+    
+        <div class="row">
 
           <!--Grid column-->
-          <div class="col-xl-3 col-lg-6">
+          <div class="col-md-6 mb-4">
+              <h1 style="font-family:bell mt; color: green;font-size:70px;">Share all your<br> reading experiences
+                </h1>
+              <p>Writing is a kind of double living. Writer experiences everything twice Catherine Drinker Bowen
+              </p>
+
+            
+
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-6 mb-4">
+
+            <!-- Main heading -->
+            <img src="../static/img/lacie.jpg" class="img-fluid z-depth-1-half"
+              alt="">
+            </div>
+        <div class="row">
+
+          <!--Grid column-->
+          <div class="col-md-6 mb-4">
+
+            <img src="../static/img/suad.jpg" class="img-fluid z-depth-1-half"
+              alt="">
+
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-6 mb-4">
+
+            <!-- Main heading -->
+            <h1  style="font-family:bell mt; color: green;font-size:70px;">Discover other 
+              book lovers
+              </h1>
+            <p>Writing became such a process of discovery Sharon O'Brien
+
+
+            </p>
+            </div>
+      <!--Section: Main features & Quick Start-->
+
+      <hr class="my-5">
+      <hr>
+
+      <!--Section: Not enough-->
+      
+
+        
+        <div class="row features-small mt-3 wow fadeIn">
+
+          <!--Grid column-->
+          <div class="col-xl-3 col-lg-6" style="padding:5px; background: #35424a; color:#ffffff;">
             <!--Grid row-->
             <div class="row">
               <div class="col-2">
-                <i class="fas fa-cubes fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+                <i class="fas fa-file fa-2x mb-1 red-text" aria-hidden="true"></i>
               </div>
               <div class="col-10 mb-2">
-                <h5 class="feature-title font-bold mb-1">Modularity</h5>
-                <p class="grey-text mt-2">Material Design for Bootstrap comes with both, compiled, ready to use
-                  libraries including all features as
-                  well as modules for CSS (SASS files) and JS.</p>
+                <h5 style="font-family:bell mt;"  >Shortly About Us</h5>
+                <p class="grey-text mt-2"> The Great Read.com was founded out of passion to provide the community of readers with quality reading material to learn, enjoy and co-exist peacefully.</p>
               </div>
             </div>
             <!--/Grid row-->
           </div>
           <!--/Grid column-->
+          
 
           <!--Grid column-->
-          <div class="col-xl-3 col-lg-6">
+          <div class="col-xl-3 col-lg-6" style="padding:5px; background: #35424a; color:#ffffff;">
             <!--Grid row-->
             <div class="row">
               <div class="col-2">
-                <i class="fas fa-question fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+                <i class=" fas fa-question mb-1 fa-2x red-text" aria-hidden="true"></i>
               </div>
-              <div class="col-10 mb-2">
-                <h5 class="feature-title font-bold mb-1">Technical support</h5>
-                <p class="grey-text mt-2">We care about reliability. If you have any questions - do not hesitate to
-                  contact us.
+              <div class="col-10 mb-2" style="padding:5px; background: #35424a; color:#ffffff;">
+                <h5 class="feature-title font-bold mb-1" style="font-family:bell mt;" >Need support</h5>
+                <p class="grey-text mt-2"> We care about reliability. If you have any questions - do not hesitate to
+                  contact us or, checkout our social media platforms.
                 </p>
               </div>
             </div>
@@ -260,31 +321,34 @@
           <!--/Grid column-->
 
           <!--Grid column-->
-          <div class="col-xl-3 col-lg-6">
-            <!--Grid row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fas fa-th fa-2x mb-1 indigo-text" aria-hidden="true"></i>
-              </div>
-              <div class="col-10 mb-2">
-                <h5 class="feature-title font-bold mb-1">Flexbox</h5>
-                <p class="grey-text mt-2">MDB fully supports Flex Box. You can forget about alignment issues.</p>
-              </div>
-            </div>
-            <!--/Grid row-->
-          </div>
-          <!--/Grid column-->
 
-          <!--Grid column-->
-          <div class="col-xl-3 col-lg-6">
+          <div class="col-xl-3 col-lg-6" style="padding:5px; background: #35424a; color:#ffffff;">
+              <!--Grid row-->
+              <div class="row">
+                <div class="col-2">
+                  <i class=" fas fa-book mb-1 fa-2x red-text" aria-hidden="true"></i>
+                </div>
+                <div class="col-10 mb-2">
+                  <h5 class="feature-title font-bold mb-1" style="font-family:bell mt;" >The Best Readers Environment</h5>
+                  <p class="grey-text mt-2"> We create an environment where our readers can explore with a variety
+of books from different authors and also grow their reading culture together with other readers though our community.                  </p>
+                </div>
+              </div>
+              <!--/Grid row-->
+            </div>
+            <!--/Grid column-->
+  
+            <!--Grid column-->
+          
+          <div class="col-xl-3 col-lg-6" style="padding:5px; background: #35424a; color:#ffffff;">
             <!--Grid row-->
             <div class="row">
               <div class="col-2">
-                <i class="far fa-file-code fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+                <i class="fas fa-cubes fa-2x mb-1 red-text" aria-hidden="true"></i>
               </div>
               <div class="col-10 mb-2">
-                <h5 class="feature-title font-bold mb-1">SASS files</h5>
-                <p class="grey-text mt-2">Arranged and well documented .scss files can't wait until you compile them.</p>
+                <h5 class="feature-title font-bold mb-1" style="font-family:bell mt;" > Shared API</h5>
+                <p class="grey-text mt-2">We allow our clients to use our API for their personal projects in order to encourage personal growth</p>
               </div>
             </div>
             <!--/Grid row-->
@@ -300,6 +364,80 @@
     </div>
   </main>
   <!--Main layout-->
-{% endblock content%}
-  
- 
+
+  <!--Footer-->
+  <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+
+    <!--Call to action-->
+    
+    <hr class="my-4">
+    <!-- contacts-->
+    
+
+    <!-- Social icons -->
+    <div class="pb-4">
+      <a href="#" target="_blank">
+        <i class="fab fa-facebook-f mr-3"></i>
+      </a>
+
+      <a href="#" target="_blank">
+        <i class="fab fa-twitter mr-3"></i>
+      </a>
+
+      <a href="#" target="_blank">
+        <i class="fab fa-youtube mr-3"></i>
+      </a>
+
+      <a href="#" target="_blank">
+        <i class="fab fa-google-plus-g mr-3"></i>
+      </a>
+
+      <a href="#" target="_blank">
+        <i class="fab fa-dribbble mr-3"></i>
+      </a>
+
+      <a href="#" target="_blank">
+        <i class="fab fa-pinterest mr-3"></i>
+      </a>
+
+      
+
+      <a href="#" target="_blank">
+        <i class="fab fa-codepen mr-3"></i>
+      </a>
+    </div>
+    <hr>
+    <!-- Social icons -->
+    <div class="pb-4">
+        
+       <p> DISCLOSURE &nbsp;&nbsp;   JOIN US &nbsp;&nbsp;  ADVERTISE&nbsp;&nbsp;  CONTACT PRIVACY &nbsp;&nbsp; SITEMAP</p>
+      </div>
+      <!-- contacts-->
+    <!--Copyright-->
+    <div class="footer-copyright py-3">
+      © 2019 Copyright:
+      <a href="#" target="_blank"> The Great Read.com </a>
+    </div>
+    <!--/.Copyright-->
+
+  </footer>
+  <!--/.Footer-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="../static/js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="../static/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="../static/js/mdb.min.js"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+
+  </script>
+</body>
+
+</html>
