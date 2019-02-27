@@ -1,6 +1,6 @@
 import os
 
-from flask import Flask, session,jsonify
+from flask import Flask, session,jsonify, render_template
 from flask_session import Session
 from sqlalchemy import create_engine
 from sqlalchemy.orm import scoped_session, sessionmaker
@@ -32,16 +32,17 @@ def showBooks():
     cmd= "SELECT * FROM books"
     
     result=db.execute(cmd)
-    # return result
-    if result:
-        return jsonify({"message":[dict(row) for row in result]})
-    return jsonify({"message":"Resource not found"})
-
+    # books = db.fetchall()
+    # if result:
+    #     return jsonify({"message":[dict(row) for row in result]})
+    # return jsonify({"message":"Resource not found"})
+    return render_template('books.html', books = result )
 @app.route('/book/show/<int:isbn>')
 @app.route('/book/show/<int:isbn>/')
 def show_specific_book(isbn):
     cmd = "SELECT * FROM books WHERE books.isbn ='{}';".format(isbn)
     result=db.execute(cmd)
+
     if result:
         return jsonify({"Book":[dict(book) for book in result]})
     return jsonify({"message":"Resource not found"})
