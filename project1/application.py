@@ -32,10 +32,7 @@ def showBooks():
     cmd= "SELECT * FROM books"
     
     result=db.execute(cmd)
-    # books = db.fetchall()
-    # if result:
-    #     return jsonify({"message":[dict(row) for row in result]})
-    # return jsonify({"message":"Resource not found"})
+  
     return render_template('books.html', books = result )
 @app.route('/book/show/<int:isbn>')
 @app.route('/book/show/<int:isbn>/')
