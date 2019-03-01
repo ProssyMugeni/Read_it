@@ -2,24 +2,27 @@
 <html>
 <head>
 <title>Books|Goodreads</title>
+
 </head>
 <body>
+<style href="{{url_for('static',filename='css/books.css')}}"></style>
+
 <h1> Welcome {{session.username}}</h1>
-<table>
+<table style="color:purple;">
 <tr>
-<th>Author</th>
-<th>Id</th>
-<th>ISBN</th>
-<th>Title</th>
-<th>Year</th>
+<th scope="col">Author</th>
+<th scope="col">Id</th>
+<th scope="col">ISBN</th>
+<th scope="col">Title</th>
+<th scope="col">Year</th>
 </tr>
 {% for book in books %}
 <tr>
-<td>{{book.author}}</td>
-<td>{{book.id}}</td>
-<td>{{book.isbn}}</td>
-<td>{{book.title}}</td>
-<td>{{book.year}}</td>
+<td scope="row" data-label="AUTHOR">{{book.author}}</td>
+<td scope="row" data-label="BOOK ID">{{book.id}}</td>
+<td scope="row" data-label="ISBN">{{book.isbn}}</td>
+<td scope="row" data-label="TITLE">{{book.title}}</td>
+<td scope="row" data-label="YEAR">{{book.year}}</td>
 </tr>
 {% endfor %}
 </body>
