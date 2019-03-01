@@ -1,6 +1,8 @@
 import os
 
-from flask import Flask, session
+
+from flask import Flask, session,jsonify
+
 from flask_session import Session
 from sqlalchemy import create_engine
 from sqlalchemy.orm import scoped_session, sessionmaker
@@ -24,3 +26,24 @@ db = scoped_session(sessionmaker(bind=engine))
 @app.route("/")
 def index():
     return "Project 1: TODO"
+
+
+@app.route('/book/show')
+@app.route('/book/show/')
+def showBooks():
+    cmd= "SELECT * FROM books"
+    
+    result=db.execute(cmd)
+    # return result
+    if result:
+        return jsonify({"message":[dict(row) for row in result]})
+    return jsonify({"message":"Resource not found"})
+
+@app.route('/book/show/<int:isbn>')
+@app.route('/book/show/<int:isbn>/')
+def show_specific_book(isbn):
+    cmd = "SELECT * FROM books WHERE books.isbn ='{}';".format(isbn)
+    result=db.execute(cmd)
+    if result:
+        return jsonify({"Book":[dict(book) for book in result]})
+    return jsonify({"message":"Resource not found"})
