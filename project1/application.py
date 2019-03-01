@@ -1,10 +1,11 @@
 import os
 
+
 from flask import Flask, session,jsonify
+
 from flask_session import Session
 from sqlalchemy import create_engine
 from sqlalchemy.orm import scoped_session, sessionmaker
-
 
 app = Flask(__name__)
 
@@ -25,6 +26,7 @@ db = scoped_session(sessionmaker(bind=engine))
 @app.route("/")
 def index():
     return "Project 1: TODO"
+
 
 @app.route('/book/show')
 @app.route('/book/show/')
